@@ -1,0 +1,9 @@
+version: 2
+authtoken: 2eBFuvZZedI2DrL4u3o0sVjpWTM_3tQVprie42w38uH6P7XbY
+tunnels:
+  first:
+    proto: http
+    addr: http://localhost:5173/
+  second:
+    proto: http
+    addr: http://127.0.0.1:8000/
