@@ -40,7 +40,7 @@ buttonClick.addEventListener("click", function () {
       } else {
         console.log('Voz ativa detectada após 2 segundo, esperando mais...');
       }
-    }, 2000);
+    }, 1000);
   }
 
   if (speech == true) {
