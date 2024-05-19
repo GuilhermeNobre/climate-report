@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relator Climático</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Relator Climático</h1>
+      <div class="card">
+        <textarea name="" id="userInput" 
+        placeholder="Para melhor resultado digite
+'Cidade, Estado, País'
+ou 
+'Cidade, País'"></textarea>
+      </div>
+      <button class="recButton" id="buttonClick">Gravar</button>
+      <button class="sendButton" onclick="sendText()">Enviar</button>
+      <div>
+        <h2 id="titleWheater"> 
+        </h2>
+        <hr class="hrTitle">
+        <div class="wheaterZone" id="wheaterInfos">
+          <!-- <div>
+            <h3>Temperatura</h3>
+            <hr>
+            <iframe width="600" height="350" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=-22.715&lon=-48.34&detailLat=-19.024&detailLon=-48.343&marker=true&pressure=true&message=true" frameborder="0"></iframe>
+          </div>
+          <div>
+            <h3>Umidade</h3>
+            <hr>
+            <iframe width="600" height="350" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=-22.715&lon=-48.34&detailLat=-19.024&detailLon=-48.343&marker=true&pressure=true&message=true" frameborder="0"></iframe>
+          </div>
+          <div>
+            <h3>Temperatura</h3>
+            <iframe width="600" height="350" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=-22.715&lon=-48.34&detailLat=-19.024&detailLon=-48.343&marker=true&pressure=true&message=true" frameborder="0"></iframe>
+          </div>
+          <div>
+            <h3>Umidade</h3>
+            <iframe width="600" height="350" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=-22.715&lon=-48.34&detailLat=-19.024&detailLon=-48.343&marker=true&pressure=true&message=true" frameborder="0"></iframe>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
