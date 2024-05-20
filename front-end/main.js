@@ -1,6 +1,9 @@
 import axios from "axios";
 // src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=-22.715&lon=-48.34&detailLat=-19.024&detailLon=-48.343&marker=true&pressure=true&message=true"
 
+const addrBackApi = "http://localhost:8000" + "/coordanates";
+
+
 export function returnUrlToIframe(typeMap, lat, long) {
   return `https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=default&zoom=12&overlay=${typeMap}&product=ecmwf&level=surface&lat=${lat}&lon=${long}&detailLat=${lat}&detailLon=${long}&marker=true&pressure=true&message=true`;
 }
@@ -75,7 +78,7 @@ window.sendText = async function () {
 async function getInfoFromApi(textLocation) {
   let dataFromApi;
   await axios
-    .post("http://localhost:8000/coordanates", {
+    .post(addrBackApi, {
       location: textLocation,
       source: "web",
     })
