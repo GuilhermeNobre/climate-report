@@ -1,4 +1,3 @@
 cd front-end 
-npm run dev & 
-cd ..
+npm run dev
 # ngrok start --config ngrok.yml --all
